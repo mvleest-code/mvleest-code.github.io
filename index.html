@@ -3,54 +3,71 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-  
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Portfolio</title>
+    
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  
+    
     <style>
-      .card-body {
-        background-color:#dae3ec;
+      body {
+        background-color: #f8f9fa;
       }
-      .second-btn {
-        margin-left:10px;
+      .card-body {
+        background-color: #f7f9fc;
+        transition: background-color 0.3s;
       }
       .card-body:hover {
-          background-color: rgba(24, 102, 152, 0.5);
+        background-color: #e9f2fa;
+      }
+      .card-title {
+        font-weight: bold;
+      }
+      .card-text {
+        font-size: 0.9rem;
+        color: #6c757d;
+      }
+      .btn-outline-secondary {
+        font-size: 0.8rem;
+        margin-right: 10px;
+      }
+      footer {
+        background-color: #343a40;
+        color: white;
+        padding: 20px 0;
+      }
+      footer p {
+        margin: 0;
       }
     </style>
-  </head> background-color: rgba(24, 102, 152, 0.5);
-      }
-
-    </style>
-    
   </head>
 
   <body>
 
+    <header class="py-4 bg-dark text-white">
+      <div class="container">
+        <h1 class="text-center">My Projects Portfolio</h1>
+      </div>
+    </header>
 
-    <main role="main">
-
+    <main role="main" class="container my-5">
       <div class="album">
-        <hr>
         <div class="row">
 
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
               <div class="card-body">
-                <h6>Title</h6>
-                <hr>
-                <p class="card-text">Text</p>
+                <h5 class="card-title">Project Title 1</h5>
+                <p class="card-text">Short description about Project 1. Explain its purpose and the technologies used.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <a href="" target="_top">
+                    <a href="#" target="_top">
                       <button type="button" class="btn btn-sm btn-outline-secondary">View Article</button>
                     </a>
-                    <a href="" target="_blank" rel="noopener noreferrer">
-                      <button type="button" class="btn btn-sm btn-outline-secondary second-btn">View on Github</button>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View on Github</button>
                     </a>
                   </div>
-                  <small class="text-muted"></small>
                 </div>
               </div>
             </div>
@@ -59,19 +76,17 @@
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
               <div class="card-body">
-                <h6>Title</h6>
-                <hr>
-                <p class="card-text">Text</p>
+                <h5 class="card-title">Project Title 2</h5>
+                <p class="card-text">Short description about Project 2. Describe its features and provide a link to the code.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <a href="" target="_top">
+                    <a href="#" target="_top">
                       <button type="button" class="btn btn-sm btn-outline-secondary">View Article</button>
                     </a>
-                    <a href="" target="_blank" rel="noopener noreferrer">
-                      <button type="button" class="btn btn-sm btn-outline-secondary second-btn">View on Github</button>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View on Github</button>
                     </a>
                   </div>
-                  <small class="text-muted"></small>
                 </div>
               </div>
             </div>
@@ -80,30 +95,36 @@
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
               <div class="card-body">
-                <h6>Title</h6>
-                <hr>
-                <p class="card-text">Text</p>
+                <h5 class="card-title">Project Title 3</h5>
+                <p class="card-text">Short description about Project 3. Highlight any challenges or unique aspects of the project.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <a href="" target="_top">
+                    <a href="#" target="_top">
                       <button type="button" class="btn btn-sm btn-outline-secondary">View Article</button>
                     </a>
-                    <a href="" target="_blank" rel="noopener noreferrer">
-                      <button type="button" class="btn btn-sm btn-outline-secondary second-btn">View on Github</button>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View on Github</button>
                     </a>
                   </div>
-                  <small class="text-muted"></small>
                 </div>
               </div>
+            </div>
+          </div>
+
         </div><!-- end of row -->
+      </div><!-- end of album -->
+    </main>
 
-    <footer class="text-muted">
+    <footer class="text-center">
       <div class="container">
-        <p class="float-right">
-        </p>
-        <p></p>
+        <p>&copy; 2024 My Portfolio | Designed with Bootstrap</p>
       </div>
     </footer>
 
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    
   </body>
 </html>
